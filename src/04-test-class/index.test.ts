@@ -7,8 +7,6 @@ import {
 } from '.';
 
 describe('BankAccount', () => {
-  jest.setTimeout(30000);
-
   const testCases = [0, 50, 100, 1000];
   test('should create account with initial balance', () => {
     testCases.forEach((initialBalance) => {

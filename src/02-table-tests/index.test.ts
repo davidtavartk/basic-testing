@@ -42,8 +42,6 @@ const invalidTestCases = [
 ];
 
 describe('simpleCalculator tests 2', () => {
-  jest.setTimeout(30000);
-
   test.each(testCases)(
     'should calculate valid test cases',
     ({ a, b, action, expected }) => {

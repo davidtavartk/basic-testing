@@ -2,8 +2,6 @@
 import { simpleCalculator, Action } from './index';
 
 describe('simpleCalculator tests', () => {
-  jest.setTimeout(30000);
-
   it('should add two numbers', () => {
     const result = simpleCalculator({ a: 1, b: 4, action: Action.Add });
     expect(result).toBe(5);
